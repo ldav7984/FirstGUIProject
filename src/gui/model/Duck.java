@@ -19,4 +19,10 @@ public class Duck
 		this.sound = sound;
 	}
 	
+	public String toString()
+	{
+		
+		String description = "I am a duck, quack quack quack, feathers on my tummy, and feathers on my back.";
+		return description;
+	}
 }

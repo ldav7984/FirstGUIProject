@@ -13,6 +13,9 @@ public class GUIController
 	{
 		myDuck = new Duck();
 		
+		appFrame = new FirstFrame();
+		//view gets initialized after the model
+
 	}
 	
 	public void start()
