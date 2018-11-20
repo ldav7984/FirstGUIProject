@@ -4,10 +4,10 @@ import javax.swing.JFrame;
 public class FirstFrame extends JFrame //it is a customized JFrame
 {
 
-	public FirstFrame()
+	public FirstFrame() //constructor
 	{
 		super(); //the class inherits from another class so it MUST start with super();
-		
+		setupFrame();
 	}
 	
 	
@@ -16,7 +16,8 @@ public class FirstFrame extends JFrame //it is a customized JFrame
 		this.setSize(800, 900);
 		this.setTitle("My first GUI");;
 		this.setResizable(true);
-		this.setVisible(true);;
+		this.setVisible(true);
 	}
+	
 	
 }
