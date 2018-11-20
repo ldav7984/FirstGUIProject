@@ -1,12 +1,18 @@
 package gui.view;
 
 import javax.swing.JPanel;
+import gui.controller.GUIController;
 
 public class FirstPanel extends JPanel
 {
-	public FirstPanel()
+	private GUIController appController;
+	
+	public FirstPanel(GUIController appController) //constructor
 	{
 		super();
+		
+		this.appController = appController;
+		
 		setupPanel();
 		setupLayout();
 		setupListeners();

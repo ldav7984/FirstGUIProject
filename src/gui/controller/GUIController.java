@@ -2,6 +2,7 @@ package gui.controller;
 
 import gui.model.Duck;
 import gui.view.FirstFrame;
+import gui.view.FirstPanel;
 
 public class GUIController 
 {
