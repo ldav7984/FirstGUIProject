@@ -8,7 +8,7 @@ public class Duck
 	{
 		this.sound = "Quack quack";
 	}
-
+	
 	
 	public String getSound()
 	{
@@ -22,7 +22,7 @@ public class Duck
 	public String toString()
 	{
 		
-		String description = "I am a duck, quack quack quack, feathers on my tummy, and feathers on my back.";
+		String description = "I'm a little duck, quack quack quack, feathers on my tummy, and feathers on my back.";
 		return description;
 	}
 }

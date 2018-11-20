@@ -22,7 +22,7 @@ public class FirstFrame extends JFrame //it is a customized JFrame
 	private void setupFrame()
 	{
 		this.setContentPane(appPanel); 
-		//takes a JPanel and installs it as a usable, visible component of the window
+		//takes a JPanel and installs it as a usable, visible component of the frame window
 		
 		this.setSize(800, 900);
 		this.setTitle("My first GUI");;
