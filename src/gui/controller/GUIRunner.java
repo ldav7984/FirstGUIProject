@@ -2,7 +2,7 @@ package gui.controller;
 
 public class GUIRunner 
 {
-	public static void mani(String [ ] args)
+	public static void main(String [ ] args)
 	{
 		GUIController app = new GUIController();
 		app.start();

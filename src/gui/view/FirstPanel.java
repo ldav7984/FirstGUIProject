@@ -31,6 +31,7 @@ public class FirstPanel extends JPanel
 	
 	private void setupPanel() //installs pieces
 	{
+		this.setBackground(Color.blue);
 		this.add(textLabel);
 		this.add(colorButton);
 	}
@@ -42,7 +43,24 @@ public class FirstPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		colorButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent mouseClick)
+			{
+				changeBackgroundColor();
+			}
+		} ); //creating a parameter of a new instance of a new class with a method in it 
+			//this single line of code ends at the );
+	}
+	
+	private void changeBackgroundColor()
+	{
+	int red = (int) (Math.random() * 256); //(int) casts the double to an int. All decimal values are thrown away	
+	int green = (int) (Math.random() * 256);
+	int blue = (int) (Math.random() * 256);
+	
+	this.setBackground(new Color(red, green, blue));
+	textLabel.setText("Red: " + red + ". Green: " + green + ". Blue: " + blue);
 	}
 	
 }
