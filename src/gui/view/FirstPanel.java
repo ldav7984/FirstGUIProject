@@ -48,6 +48,8 @@ public class FirstPanel extends JPanel
 			public void actionPerformed(ActionEvent mouseClick)
 			{
 				changeBackgroundColor();
+				//System.out.println("This happens when the button is clicked."); 
+				//quick tester for action listener
 			}
 		} ); //creating a parameter of a new instance of a new class with a method in it 
 			//this single line of code ends at the );
@@ -60,7 +62,7 @@ public class FirstPanel extends JPanel
 	int blue = (int) (Math.random() * 256);
 	
 	this.setBackground(new Color(red, green, blue));
-	textLabel.setText("Red: " + red + ". Green: " + green + ". Blue: " + blue);
+	textLabel.setText("Red: " + red + ". Green: " + green + ". Blue: " + blue + ".");
 	}
 	
 }
